@@ -51,8 +51,8 @@ console.log("click");
 }
 
 vaa ()
-click.addEventListener( "click" , () => {
+click.addEventListener(  "click" , () => {
 
-    click.style.display = "none"
+    click.classList.add("bc")
     
 })
