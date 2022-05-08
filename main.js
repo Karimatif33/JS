@@ -26,8 +26,9 @@ const ab = document.querySelector(".bleve")
 const elm = document.createElement("h1")
 const sec = document.querySelector(".sec")
 const buy = document.getElementById("buy")
+const click = document.querySelector(".click")
 sec.append(elm);
-console.log("buy");
+console.log("click");
 
 // ab.remove()
 
@@ -50,3 +51,8 @@ console.log("buy");
 }
 
 vaa ()
+click.addEventListener( "click" , () => {
+
+    click.style.display = "none"
+    
+})
