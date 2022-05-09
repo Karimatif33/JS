@@ -31,3 +31,6 @@ const btnr = document.querySelector(".btn-primary1")
 
 // })
 
+card.addEventListener("click" , (eo) => {
+    con.setAttribute ("open")
+})
