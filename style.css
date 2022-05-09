@@ -193,12 +193,12 @@ border-radius: 5px;
 
 
 .container{
-  margin-top: 50px;
+  margin-top: 10px;
   background-color: #fff;
   border-radius: 12px;
-  width: 60%;
+  width: 80%;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 20px;
     
 
 }
@@ -210,17 +210,16 @@ border-radius: 5px;
 
 .bigger-contaier{
   /* background-color: rgb(221, 185, 185); */
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 width: 50%;
-height: 25%;
 margin: 20px auto 0 auto;
+border-radius: 20px;
 }
 .active{
   display: block;
+}
+dialog::backdrop {
+
+  background-color: #3d4a5993;
 }
 
 
