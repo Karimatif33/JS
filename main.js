@@ -7,17 +7,17 @@ const btn = document.querySelector(".btn1")
 const con = document.querySelector(".bigger-contaier")
 const btnr = document.querySelector(".btn-primary1")
 
-card.addEventListener( "click" , (eo) => {
-    // con.style.display = ("block") 
-    con.classList.add("active")
-    eo.preventDefault()
+// card.addEventListener( "click" , (eo) => {
+//     // con.style.display = ("block") 
+//     con.classList.add("active")
+//     eo.preventDefault()
 
-})
+// })
 
-btnr.addEventListener( "click" , (eo) => {
-    // con.style.display = ("none")
-    con.classList.remove("active")
-})
+// btnr.addEventListener( "click" , (eo) => {
+//     // con.style.display = ("none")
+//     con.classList.remove("active")
+// })
 
 // card.addEventListener( "click" ,  (eo) => {
 //     jsa.style.display=("block")
@@ -30,3 +30,4 @@ btnr.addEventListener( "click" , (eo) => {
 //     jsa.style.display=("none")
 
 // })
+

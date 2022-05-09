@@ -199,6 +199,8 @@ border-radius: 5px;
   width: 60%;
   text-align: center;
   padding: 20px 0;
+    
+
 }
 .container p{
   font-size: 20px;
@@ -213,7 +215,8 @@ border-radius: 5px;
   bottom: 0;
   right: 0;
   left: 0;
-  display: none;
+width: 100%;
+height: 100%;
 }
 .active{
   display: block;
