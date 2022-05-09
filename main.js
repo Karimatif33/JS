@@ -30,24 +30,3 @@ btnr.addEventListener( "click" , (eo) => {
 //     jsa.style.display=("none")
 
 // })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
