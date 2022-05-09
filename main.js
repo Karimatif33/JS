@@ -51,12 +51,13 @@ console.log("click");
 }
 
 vaa ()
-click.addEventListener(  "click" , () => {
+click.addEventListener(  "click" , (eo) => {
 
     click.classList.add("bc")
     const h3 = document.createElement("h3")
     sec.append(h3);
     h3.innerText = ("event")
     h3.setAttribute("class", "pri")
+    eo.target.remove()
     
 })
