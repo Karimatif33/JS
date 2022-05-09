@@ -1,63 +1,53 @@
+const card = document.querySelector(".card")
+console.log("card")
+const jsa = document.querySelector(".jsa")
+console.log("jsa")
+const jsaa = document.querySelector(".jsaa")
+const btn = document.querySelector(".btn1")
+const con = document.querySelector(".bigger-contaier")
+const btnr = document.querySelector(".btn-primary1")
 
+card.addEventListener( "click" , (eo) => {
+    // con.style.display = ("block") 
+    con.classList.add("active")
+    eo.preventDefault()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  elm.classList.add("prince")
-//  elm.innerText = ("welcome")
-//  ab.setAttribute("class", "prince");
-
-
-
-
-const ab = document.querySelector(".bleve")
-const elm = document.createElement("h1")
-const sec = document.querySelector(".sec")
-const buy = document.getElementById("buy")
-const click = document.querySelector(".click")
-sec.append(elm);
-console.log("click");
-
-// ab.remove()
-
-// setTimeout(() => {
-// elm.classList.add("prince")
-// elm.innerText =("wlcome funciton")
-// ab.setAttribute("class", "prince")
-// buy.style.backgroundColor=("red");
-
-// }
-// , 1000 )
-
- const vaa = () => {
-
-    elm.classList.add("prince")
-    elm.innerText = ("welcome")
-    ab.setAttribute("class", "prince");
-   
-   
-}
-
-vaa ()
-click.addEventListener(  "click" , (eo) => {
-
-    click.classList.add("bc")
-    const h3 = document.createElement("h3")
-    sec.append(h3);
-    h3.innerText = ("event")
-    h3.setAttribute("class", "pri")
-    eo.target.remove()
-    
 })
+
+btnr.addEventListener( "click" , (eo) => {
+    // con.style.display = ("none")
+    con.classList.remove("active")
+})
+
+// card.addEventListener( "click" ,  (eo) => {
+//     jsa.style.display=("block")
+//     // jsa.setAttribute("class" , "jsaa")
+
+// })
+
+
+// btn.addEventListener ( "click" , (eo) => {
+//     jsa.style.display=("none")
+
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
