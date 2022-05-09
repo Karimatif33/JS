@@ -14,6 +14,12 @@ header {
  
 }
 
+.dark header{
+  background-color: #000000;
+  color: white;
+  border-radius: 0 0 70px 70px; 
+}
+
 header h1 {
   margin-bottom: 23px;
 }
@@ -38,11 +44,18 @@ header h1 {
 }
 
 .mode {
+  cursor: pointer;
   border: 2px solid white;
   border-radius: 10px;
   padding: 5px 10px;
 }
-
+.mode1{
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: none;
+}
 li {
   list-style-type: none;
   font-size: 18px;
@@ -193,12 +206,12 @@ border-radius: 5px;
 
 
 .container{
-  margin-top: 10px;
+  margin-top: 50px;
   background-color: #fff;
   border-radius: 12px;
-  width: 80%;
+  width: 60%;
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px 0;
     
 
 }
@@ -209,17 +222,32 @@ border-radius: 5px;
 
 
 .bigger-contaier{
-  /* background-color: rgb(221, 185, 185); */
-width: 50%;
-margin: 20px auto 0 auto;
-border-radius: 20px;
+  display: none;
+  background-color: rgb(221, 185, 185);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+width: 100%;
+height: 100%;
+margin: 0px auto 0 auto;
 }
+
+.kh{
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 12px;
+  width: 60%;
+  text-align: center;
+  padding: 20px 0;
+  margin: 20px auto 0 auto;
+
+}
+
+
 .active{
   display: block;
-}
-dialog::backdrop {
-
-  background-color: #3d4a5993;
 }
 
 
