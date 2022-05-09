@@ -37,6 +37,11 @@ const btnr = document.querySelector(".btn-primary1")
 // btnr.addEventListener("click" , (eo) => {
 //     con.renoveAttribute ("close" ,"a")
 // })
+
 card.addEventListener("click" , (eo) => {
-    con.showModel()
+    con.showModal()
+})
+
+btnr.addEventListener("click" , (eo) => {
+    con.close()
 })
