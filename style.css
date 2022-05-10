@@ -3,7 +3,6 @@
 
   font-family: sans-serif;
 }
-
 header {
   margin-bottom: 100px;
 
@@ -13,17 +12,25 @@ header {
 
  
 }
-
+.dark{
+  background-color: #443334;
+color: white;
+}
 .dark header{
-  background-color: #000000;
+  background-color: #443334;
+  box-shadow: 5px 5px 15px rgb(168, 136, 136);
+
   color: white;
   border-radius: 0 0 70px 70px; 
 }
 
 header h1 {
-  margin-bottom: 23px;
+  margin-bottom: 33px;
 }
+.dark header h1{
+  background-color: transparent;
 
+}
 .parent {
   display: flex;
   justify-content: space-around;
@@ -40,14 +47,21 @@ header h1 {
 
 .parent li a:hover {
   border-bottom: 2px solid red;
+  
   font-size: 20px;
 }
 
 .mode {
   cursor: pointer;
-  border: 2px solid white;
   border-radius: 10px;
   padding: 5px 10px;
+}
+.mode:hover {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 7px 12px;
+  border-bottom: 2px solid red;
+
 }
 .mode1{
   cursor: pointer;
@@ -75,10 +89,25 @@ h1 {
 
   padding: 15px;
 }
+.dark  h1{
+  background-color: transparent;
+  box-shadow: 5px 5px 25px rgb(168, 136, 136);
 
+}
+.dark section {
+  margin-bottom: 100px;
+  box-shadow: 5px 5px 25px rgb(168, 136, 136);
+
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 13px;
+
+  padding: 45px 0;
+}
 section {
   margin-bottom: 100px;
-  box-shadow: 5px 5px 25px rgb(179, 172, 172);
+  box-shadow: 5px 5px 25px rgb(177, 165, 165);
 
   width: 97%;
   margin-left: auto;
@@ -164,7 +193,11 @@ footer {
   border-top-right-radius: 35px;
   margin-bottom: 0;
 }
+.dark .design {
+  background-color: transparent;
+  box-shadow: 5px 5px 25px rgb(168, 136, 136);
 
+}
 .follow {
   box-shadow: 0 5px 30px 0 rgb(0 0 0 / 25%);
   border-radius: 10px;
@@ -172,6 +205,17 @@ footer {
   text-align: center;
   margin: 0 auto 10px;
   border-top: 6px solid #3d4a59;
+
+  opacity: 0.9;
+  width: 99%;
+}
+.dark .follow {
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 25%);
+  border-radius: 10px;
+  padding: 16px 0;
+  text-align: center;
+  margin: 0 auto 10px;
+  border-top: 6px solid #81585e;
 
   opacity: 0.9;
   width: 99%;
@@ -202,8 +246,15 @@ border-radius: 5px;
 
 
 
-
-
+.dark .container{
+margin-top: 50px;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 60%;
+    text-align: center;
+    padding: 20px 0;
+    color: black;
+}
 
 .container{
   margin-top: 50px;
@@ -215,11 +266,21 @@ border-radius: 5px;
     
 
 }
+
+.dark.container p{
+  color: white;
+}
 .container p{
   font-size: 20px;
 }
 
-
+.dark .card-body h5{
+  color: black;
+  }
+  
+.dark .card-body p{
+color: black;
+}
 
 .bigger-contaier{
   display: none;
@@ -242,6 +303,7 @@ margin: 0px auto 0 auto;
   text-align: center;
   padding: 20px 0;
   margin: 20px auto 0 auto;
+  color: black;
 
 }
 
