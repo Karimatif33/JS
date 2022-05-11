@@ -21,6 +21,15 @@ uploud.addEventListener("click", (eo) => {
     
   </div>`
 
-  container.innerHTML+= (upt) 
+    container.innerHTML += (upt)
 
 })
+
+// container.addEventListener("click", (eo) => {
+//     if (eo.target.className == "fa-solid fa-trash-can")
+//      {
+// eo.target.parentElement.parentElement.remove()
+
+//     } else {
+
+//     })
