@@ -28,20 +28,35 @@ const procon = document.querySelector("#idaa");
 
 procon.style.border = "red 5px solid";
 
+
+
+// اكواد إضافة كارد جديد 
 btnadd.addEventListener("click", (eo) => {
-  const newprod = ` 
-            <div class="card mycard" style="width: 18rem;">
-              <img style="border-radius: 5px;" src="pexels-cottonbro-3826678.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">New  Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a id="buy" href="#"  class="btn btn-primary">buy</a>             
-              </div>
-            </div>  `;
+    const addcard = `
+    <div class="card mycard" style="width: 18rem;">
+      <img style="border-radius: 5px;" src="pexels-cottonbro-3826678.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">New Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a id="buy" href="#"  class="btn btn-primary">buy</a>             
+      </div>
+    </div>`
+    procon.innerHTML +=( addcard )
+})
 
-  procon.innerHTML += newprod;
-});
 
+
+procon.addEventListener("click", (eo) => {
+    con.classList.add("active");
+    kh.style.display = "none";
+})
+
+
+if (condition) {
+
+  
+    
+    }
 // console.log(cardr)
 
 btna.forEach((item) => {
