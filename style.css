@@ -1,4 +1,5 @@
 *{
+  font-family: 'Cairo', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -7,4 +8,6 @@ body{
   background-color: #352f5b;
   color: #fff;
 }
+
+
 
