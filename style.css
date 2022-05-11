@@ -31,11 +31,45 @@ h1 {
   width: 60%;
   align-items: center;
   font-size: 25px;
+  border-bottom: #fff 2px solid;
+  border-radius: 10px;
+}
+.task:hover{
+  border-bottom: #fff 3px solid;
+  border-radius: 12px;
+  transition: all 0.1s ;
+
 }
 
 i{
   margin: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+.ops{
+}
+.fa-star{
+  opacity: 0.6;
+  font-size: 25px;
 
+}
+.fa-star:hover{
+  opacity: 1;
+  font-size: 28px;
+  color: gold;
+  transition: all 0.1s ;
+}
+.fa-trash-can{
+  opacity: 0.6;
+  font-size: 25px;
+}
+.fa-trash-can:hover{
+  opacity: 1;
+  font-size: 28px;
+  color: gold;
+  transition: all 0.1s ;
+}
+.fa-face-angry{
+  color: gold;
 }
 /* .icon{
   margin: 0px 10px 0px 15px;
@@ -61,7 +95,10 @@ input{
 
 .uploud:hover{
   font-size: 35px;
-  color: rgb(252, 221, 47);
+  color: rgb(103, 179, 250);
   transition: all 0.1s ;
 
+}
+button{
+  all:unset
 }
