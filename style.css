@@ -102,6 +102,15 @@ input{
 button{
   all:unset
 }
-.dn {
+.fa-heart{
+  /* display: none !important; */
+}
+.unactive {
   display: none !important; 
+}
+.active{
+  display: block !important;
+}
+.text-e{
+text-decoration-line: line-through;
 }

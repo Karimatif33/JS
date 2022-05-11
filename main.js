@@ -1,17 +1,12 @@
-const uploud = document.querySelector("button")
-const input = document.querySelector("input")
-const container = document.getElementById("container")
-const angry = document.querySelectorAll(".fa-face-angry")
-const heart = document.querySelector("fa-heart")
+const uploud = document.querySelector("button");
+const input = document.querySelector("input");
+const container = document.getElementById("container");
 
-
-
-
-
+// const text = document.getElementByClassName("text-text");
 
 uploud.addEventListener("click", (eo) => {
-    eo.preventDefault()
-    const upt = ` <div class="task task1" >
+  eo.preventDefault();
+  const upt = ` <div class="task task1" >
     <span><i class="fa-solid fa-star ops"></i></span>
     <p>${input.value} </p>
   <!-- <span><i class="fa-solid fa-heart"></i></span>  -->
@@ -21,23 +16,22 @@ uploud.addEventListener("click", (eo) => {
       <span><i class="fa-solid fa-face-angry"></i></span> 
   </div>  
     
-  </div>`
+  </div>`;
 
-    container.innerHTML += (upt)
-
-})
+  container.innerHTML += upt;
+});
 
 container.addEventListener("click", (eo) => {
-    if (eo.target.className == "fa-solid fa-trash-can")
-     {
-eo.target.parentElement.parentElement.parentElement.remove()
+  if (eo.target.className == "fa-solid fa-trash-can") {
+    eo.target.parentElement.parentElement.parentElement.remove();
+  } else if (eo.target.className == "fa-solid fa-face-angry") {
+    eo.target.classList.add("unactive");
+    const heart = `<span><i class="fa-solid fa-heart"></i></span> `;
 
-    } else if (eo.target.className == "fa-solid fa-face-angry") {
-        eo.target.classList.add("dn")
-    } else {
-        
-    } {}
-        
-    })
+    eo.target.parentElement.parentElement.parentElement
+      .getElementsByClassName("text-text")[0]
+      .classList.add("text-e");
 
-
+      eo.target.parentElement.innerHTML += heart;
+  }
+});
