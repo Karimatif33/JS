@@ -102,3 +102,6 @@ input{
 button{
   all:unset
 }
+.dn {
+  display: none !important; 
+}

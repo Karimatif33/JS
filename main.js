@@ -1,6 +1,8 @@
 const uploud = document.querySelector("button")
 const input = document.querySelector("input")
 const container = document.getElementById("container")
+const angry = document.querySelectorAll(".fa-face-angry")
+const heart = document.querySelector("fa-heart")
 
 
 
@@ -15,7 +17,7 @@ uploud.addEventListener("click", (eo) => {
   <!-- <span><i class="fa-solid fa-heart"></i></span>  -->
 
   <div class="icon">
-      <span><i class="fa-solid fa-trash-can ops"></i></span> 
+      <span><i class="fa-solid fa-trash-can"></i></span> 
       <span><i class="fa-solid fa-face-angry"></i></span> 
   </div>  
     
@@ -25,11 +27,17 @@ uploud.addEventListener("click", (eo) => {
 
 })
 
-// container.addEventListener("click", (eo) => {
-//     if (eo.target.className == "fa-solid fa-trash-can")
-//      {
-// eo.target.parentElement.parentElement.remove()
+container.addEventListener("click", (eo) => {
+    if (eo.target.className == "fa-solid fa-trash-can")
+     {
+eo.target.parentElement.parentElement.parentElement.remove()
 
-//     } else {
+    } else if (eo.target.className == "fa-solid fa-face-angry") {
+        eo.target.classList.add("dn")
+    } else {
+        
+    } {}
+        
+    })
 
-//     })
+
