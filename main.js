@@ -1,4 +1,5 @@
 const uploud = document.querySelector("button")
+const input = document.querySelector("input")
 const container = document.getElementById("container")
 
 
@@ -10,7 +11,7 @@ uploud.addEventListener("click", (eo) => {
     eo.preventDefault()
     const upt = ` <div class="task task1" >
     <span><i class="fa-solid fa-star ops"></i></span>
-    <p>Task </p>
+    <p>${input.value} </p>
   <!-- <span><i class="fa-solid fa-heart"></i></span>  -->
 
   <div class="icon">
