@@ -20,6 +20,7 @@ uploud.addEventListener("click", (eo) => {
   </div>`;
 
   container.innerHTML += upt;
+  input.value=""
 });
 
 container.addEventListener("click", (eo) => {
@@ -47,6 +48,16 @@ container.addEventListener("click", (eo) => {
 
   }
   
+  else if (eo.target.className == "fa-solid fa-star ops") {
+    eo.target.classList.add("star");
+    container.prepend(eo.target.parentElement.parentElement)
 
+  }
+  else if (eo.target.className == "fa-solid fa-star ops star") {
+    eo.target.classList.remove("star");
+    container.append(eo.target.parentElement.parentElement)
+
+  }
+  
   
 });

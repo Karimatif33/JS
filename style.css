@@ -45,7 +45,8 @@ i{
   margin: 0px 10px 0px 10px;
   cursor: pointer;
 }
-.ops{
+i:hover{
+font-size: 28px;
 }
 .fa-star{
   opacity: 0.6;
@@ -104,6 +105,7 @@ button{
 }
 .fa-heart{
   /* display: none !important; */
+  color: rgb(250, 109, 109);
 }
 .unactive {
   display: none !important; 
@@ -113,4 +115,9 @@ button{
 }
 .text-e{
 text-decoration-line: line-through;
+color: rgb(179, 219, 252);
+}
+.star{
+  color: orange;
+  opacity: 1;
 }
