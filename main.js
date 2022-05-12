@@ -27,7 +27,7 @@ container.addEventListener("click", (eo) => {
     eo.target.parentElement.parentElement.parentElement.remove();
   } else if (eo.target.className == "fa-solid fa-face-angry") {
     eo.target.classList.add("unactive");
-    const heart = `<span><i class="fa-solid fa-heart"></i></span> `;
+    const heart = `<i class="fa-solid fa-heart"></i> `;
 
     eo.target.parentElement.parentElement.parentElement
       .getElementsByClassName("text-text")[0]
@@ -35,4 +35,18 @@ container.addEventListener("click", (eo) => {
 
       eo.target.parentElement.innerHTML += heart;
   }
+  else if (eo.target.className == "fa-solid fa-heart") {
+    eo.target.classList.remove("unactive");
+    eo.target.parentElement.parentElement.parentElement
+    .getElementsByClassName("text-text")[0]
+    .classList.remove("text-e"); 
+    eo.target.style.display=("none")
+    eo.target.parentElement
+    .getElementsByClassName("fa-face-angry")[0]
+    .classList.remove("unactive");
+
+  }
+  
+
+  
 });
