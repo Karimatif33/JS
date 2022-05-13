@@ -2,7 +2,6 @@ const uploud = document.querySelector("button");
 const input = document.querySelector("input");
 const container = document.getElementById("container");
 
-// const text = document.getElementByClassName("text-text");
 
 uploud.addEventListener("click", (eo) => {
     eo.preventDefault();
@@ -24,9 +23,13 @@ uploud.addEventListener("click", (eo) => {
 });
 
 container.addEventListener("click", (eo) => {
+   
+   
     if (eo.target.className == "fa-solid fa-trash-can") {
         eo.target.parentElement.parentElement.parentElement.remove();
-    } else if (eo.target.className == "fa-solid fa-face-angry") {
+    } 
+    
+    else if (eo.target.className == "fa-solid fa-face-angry") {
         eo.target.classList.add("unactive");
         const heart = `<i class="fa-solid fa-heart"></i> `;
 
@@ -36,6 +39,8 @@ container.addEventListener("click", (eo) => {
 
         eo.target.parentElement.innerHTML += heart;
     }
+    
+    
     else if (eo.target.className == "fa-solid fa-heart") {
         eo.target.classList.remove("unactive");
         eo.target.parentElement.parentElement.parentElement
@@ -48,11 +53,15 @@ container.addEventListener("click", (eo) => {
 
     }
 
+   
+   
     else if (eo.target.className == "fa-solid fa-star ops") {
         eo.target.classList.add("star");
         container.prepend(eo.target.parentElement.parentElement)
 
     }
+   
+   
     else if (eo.target.className == "fa-solid fa-star ops star") {
         eo.target.classList.remove("star");
         container.append(eo.target.parentElement.parentElement)
@@ -61,3 +70,106 @@ container.addEventListener("click", (eo) => {
 
 
 });
+
+switch ( eo.target ) {
+
+    case eo.target.className == "fa-solid fa-trash-can":
+        eo.target.parentElement.parentElement.parentElement.remove();
+      break;
+    
+    
+    case eo.target.className == "fa-solid fa-face-angry":
+        eo.target.classList.add("unactive");
+        const heart = `<i class="fa-solid fa-heart"></i> `;
+
+        eo.target.parentElement.parentElement.parentElement
+            .getElementsByClassName("text-text")[0]
+            .classList.add("text-e");
+
+        eo.target.parentElement.innerHTML += heart;  
+      break;
+    
+   
+      case eo.target.className == "fa-solid fa-heart":
+        eo.target.classList.remove("unactive");
+        eo.target.parentElement.parentElement.parentElement
+            .getElementsByClassName("text-text")[0]
+            .classList.remove("text-e");
+        eo.target.style.display = ("none")
+        eo.target.parentElement
+            .getElementsByClassName("fa-face-angry")[0]
+            .classList.remove("unactive");
+      break;
+   
+   
+      case eo.target.className == "fa-solid fa-star ops":
+        eo.target.classList.add("star");
+        container.prepend(eo.target.parentElement.parentElement);
+      break;
+     
+     
+      case eo.target.className == "fa-solid fa-trash-can":
+        eo.target.parentElement.parentElement.parentElement.remove();
+      break;
+     
+     
+      case eo.target.className == "fa-solid fa-star ops star":
+        eo.target.classList.remove("star");
+        container.append(eo.target.parentElement.parentElement);
+      break;
+    
+    default:
+      break;
+    
+    }
+
+
+    container.addEventListener("click", (eo) => {
+   
+   
+        if (eo.target.className == "fa-solid fa-trash-can") {
+            eo.target.parentElement.parentElement.parentElement.remove();
+        } 
+        
+        else if (eo.target.className == "fa-solid fa-face-angry") {
+            eo.target.classList.add("unactive");
+            const heart = `<i class="fa-solid fa-heart"></i> `;
+    
+            eo.target.parentElement.parentElement.parentElement
+                .getElementsByClassName("text-text")[0]
+                .classList.add("text-e");
+    
+            eo.target.parentElement.innerHTML += heart;
+        }
+        
+        
+        else if (eo.target.className == "fa-solid fa-heart") {
+            eo.target.classList.remove("unactive");
+            eo.target.parentElement.parentElement.parentElement
+                .getElementsByClassName("text-text")[0]
+                .classList.remove("text-e");
+            eo.target.style.display = ("none")
+            eo.target.parentElement
+                .getElementsByClassName("fa-face-angry")[0]
+                .classList.remove("unactive");
+    
+        }
+    
+       
+       
+        else if (eo.target.className == "fa-solid fa-star ops") {
+            eo.target.classList.add("star");
+            container.prepend(eo.target.parentElement.parentElement)
+    
+        }
+       
+       
+        else if (eo.target.className == "fa-solid fa-star ops star") {
+            eo.target.classList.remove("star");
+            container.append(eo.target.parentElement.parentElement)
+    
+        }
+    
+    
+    });
+    
