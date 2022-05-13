@@ -9,15 +9,12 @@ uploud.addEventListener("click", (eo) => {
     <span><i class="fa-solid fa-star ops"></i></span>
     <p class="text-text" >${input.value} </p>
   <!-- <span><i class="fa-solid fa-heart"></i></span>  -->
-
   <div class="icon">
         <span><i class="fa-solid fa-trash-can"></i></span> 
-
       <span><i class="fa-solid fa-face-angry"></i></span> 
    </div> 
     
   </div>`;
-
     container.innerHTML += upt;
     input.value = ""
 });
