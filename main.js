@@ -46,13 +46,13 @@ const allproduct = document.querySelectorAll(".product")
 
 calc.addEventListener("click" , (eo) => {
 const totalPrice = document.getElementById("total-price")
-    totalPrice.innerHTML=`  `  
     let  total = 0
     allproduct.forEach((item) => {
         const price = Number (item.getElementsByClassName("price")[0].innerText.replace("$",""))  
         const quantity = Number (item.getElementsByClassName("input-quantity")[0].value)
             total = total + (price*quantity)
             console.log(total)
+            totalPrice.innerHTML=` ${total} $ `  
 
         });
     
